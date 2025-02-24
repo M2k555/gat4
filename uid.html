@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>context</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            gap: 20px; /* ระยะห่างระหว่างภาพ */
+            padding: 20px;
+        }
+
+        .image-container figure {
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            width: 300px; /* กำหนดขนาดแต่ละช่อง */
+        }
+
+        .image-container img {
+            width: 100%; /* ปรับให้เต็มขนาดของ figure */
+            height: auto;
+            border-radius: 10px; /* ทำให้มุมโค้ง */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+        }
+
+        .image-container figcaption {
+            margin-top: 10px; /* เพิ่มระยะห่างระหว่างรูปกับข้อความ */
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <a href="index.html"><img src="img/SMART (1).png" width="200" height="90" alt="Logo"></a>
+                </div>
+                <ul class="Menu">
+                    <li><a href="home.html"><img src="img/HOME.png" alt="Home"></a></li>
+                    <li><a href="profile.html"><img src="img/HOME (1).png" alt="Profile"></a></li>
+                    <li><a href="Education.html"><img src="img/HOME (2).png" alt="Education"></a></li>
+                    <li><a href="Apprecation.html"><img src="img/HOME (3).png" alt="Appreciation"></a></li>
+                    <li><a href="certifications.html"><img src="img/HOME (4).png" alt="Certifications"></a></li>
+                    <li><a href="activities.html"><img src="img/HOME (5).png" alt="Activities"></a></li>
+                    <li><a href="uid.html"><img src="img/HOME (6).png" alt="UID"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- เพิ่มรูปภาพ 3 รูปพร้อมข้อความ -->
+    <div class="image-container">
+        <figure>
+            <a href="https://www.facebook.com/profile.php?id=100072530050869&sk=about"><img src="img/stp (5).png" alt="">
+            <figcaption>รูปภาพที่ 1: ธรรมชาติที่สวยงาม</figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.instagram.com/_puat_aum/l"><img src="img/stp (3).png" alt="">
+            <figcaption>รูปภาพที่ 2: เมืองยามค่ำคืน</figcaption>
+        </figure>
+        <figure>
+            <a href=""><img src="img/stp (2).png" alt="">
+            <figcaption>รูปภาพที่ 3: สถาปัตยกรรมที่โดดเด่น</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
